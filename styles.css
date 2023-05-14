@@ -5,6 +5,14 @@ html{
     font-size: 22px;
 }
 
+body
+{
+justify-content: center;
+display: flex;
+align-items: center;
+min-height: 100vh;
+}
+
 h2,h4,p{
     margin:0;
 }
@@ -18,11 +26,10 @@ body{
 }
 
 #container{
-    width: 1000px;
-    height: 600px;
+    
     box-shadow: 3px 1px 15px 2px rgba(0,0,0,0.67);
     border-radius: 6px;
-    overflow: hidden;
+   
 }
 
 #top-section{
@@ -44,7 +51,7 @@ body{
     display: inline-block;
     
     height: 100%;
-    width: 50%;
+    width: 100%;
     vertical-align: top;
     background-color: #2ab6b4;
     padding: 50px;
@@ -54,7 +61,7 @@ body{
     display: inline-block;
     padding: 50px;
     height: 100%;
-    width: 50%;
+    width: 100%;
     vertical-align: top;
     background-color: #35c8c6;
 }
@@ -125,4 +132,16 @@ ul{
     opacity: 75%;
     font-size: 0.9rem;
     line-height: 1.25rem;
+}
+
+@media (min-width: 800px){
+    #container{
+        width: 900px;
+        height: 600px;
+        overflow: hidden;
+    }
+
+    #left-box,#right-box{
+        width: 50%;
+    }
 }
